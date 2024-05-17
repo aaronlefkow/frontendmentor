@@ -84,13 +84,14 @@ body {
 
 .text {
   text-align: center;
+  padding: 0 1.6rem;
 }
 
 .heading-text {
   font-size: 2.2rem;
   font-weight: 700;
   color: #1f314f;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .body-text {
