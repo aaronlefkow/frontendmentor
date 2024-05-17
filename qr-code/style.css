@@ -1,0 +1,119 @@
+/* ************************* */
+/* GENERAL */
+/* ************************* */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(212, 46%, 89%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Outfit", sans-serif;
+}
+
+/* ************************* */
+/* QR COMPONENT */
+/* ************************* */
+
+.container {
+  width: 32rem;
+  height: 49.7rem;
+  padding: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.qr-code-box {
+  width: 28.8rem;
+  height: 28.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container,
+.qr-code-box {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.qr-code-box {
+  background-color: #347ef6;
+  position: relative;
+}
+
+.qr-code-box::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #3d86fb;
+  width: 32.8rem;
+  height: 32.8rem;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.qr-code-box::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(50%, 50%);
+  background-color: #3d86fb;
+  width: 32.8rem;
+  height: 32.8rem;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.qr-code {
+  z-index: 1;
+}
+
+.text {
+  text-align: center;
+}
+
+.heading-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f314f;
+  margin-bottom: 16px;
+}
+
+.body-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.19px;
+  color: #7d889e;
+}
+
+/* ************************* */
+/* ATTRIBUTION */
+/* ************************* */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
