@@ -58,30 +58,27 @@ body {
   position: relative;
 }
 
-.qr-code-box::before {
+.qr-code-box::before,
+.qr-code-box::after {
   content: "";
+  background-color: #3d86fb;
   position: absolute;
   top: 0%;
   left: 0%;
-  transform: translate(-50%, -50%);
-  background-color: #3d86fb;
-  width: 32.8rem;
-  height: 32.8rem;
   border-radius: 50%;
   z-index: 0;
 }
 
-.qr-code-box::after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(50%, 50%);
-  background-color: #3d86fb;
+.qr-code-box::before {
+  transform: translate(-50%, -50%);
   width: 32.8rem;
   height: 32.8rem;
-  border-radius: 50%;
-  z-index: 0;
+}
+
+.qr-code-box::after {
+  transform: translate(50%, 50%);
+  width: 32.8rem;
+  height: 32.8rem;
 }
 
 .qr-code {
