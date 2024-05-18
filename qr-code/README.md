@@ -39,9 +39,12 @@ In the below image I turned off the overflow, border-radius, and changed the col
 ![](./images/squares.png)
 
 What I initially expected to happen was have the edges meet in the center of the QR code. However, they are a bit off from center.
-From a udemy course I learned that ::before and ::after are actually in relation to the parent. In this case, the parent is the blue square.
+From a udemy course, I learned that ::before and ::after are actually in relation to the parent. In this case, the parent is "qr-code-box" (the blue square).
+This means that with the combination of 0% top and translate that the center of the ::before is actually the top left of the blue square.
+Unexpectedly, the ::after square appears to be placed in relation to the ::before. I expiremented a bit but for now was unable to determine if this is standard or something caused by my css.
+
 The figma design file had the two squares having very different width and height but I was able to make it look very similar to the design using the same dimensions for each circle.
-It was a very happy coincidence for me.
+Sometimes things just work and I don't 100% know why.
 
 ## Continued development
 
